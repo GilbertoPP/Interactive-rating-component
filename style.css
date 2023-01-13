@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-card,
+.thank-you-card {
+  background-color: hsl(213, 19%, 18%);
+  max-width: 40rem;
+  padding: 3.5rem 3.5rem 3rem 3rem;
+  border-radius: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.icon-star {
+  width: 5rem;
+  height: 5rem;
+  background-color: hsla(216, 12%, 54%, 0.123);
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: -2rem;
+}
+
+.paragraph {
+  color: hsl(216, 12%, 54%);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: -0.5rem;
+}
+
+.rating-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: hsla(216, 12%, 54%, 0.123);
+  border-radius: 100%;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.rating:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 54%);
+}
+
+.rating.actived {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 1.9px;
+  background-color: hsl(25, 97%, 53%);
+  padding: 1.5rem 0;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+/*THANK YOU STATE*/
+
+.hidden {
+  display: none;
+}
+
+.thank-you-card {
+  padding: 3rem 3rem 2.5rem 2.5rem;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  background-color: hsla(216, 12%, 54%, 0.123);
+  color: hsl(25, 97%, 53%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.thank-you-card .btn {
+  align-self: stretch;
+}
+
+/*PROFILE*/
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 47%, 61%);
+}
