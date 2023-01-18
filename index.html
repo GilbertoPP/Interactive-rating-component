@@ -19,14 +19,14 @@
     <!-- Rating state start -->
     <main class="container">
       <h1 class="sr-only">Interactive rating component</h1>
-      <section class="main-card">
+      <div class="main-card">
         <img src="./images/icon-star.svg" class="icon-star" alt="" />
         <h1 class="title">How did we do?</h1>
         <p class="paragraph">
           Please let us know how we did with your support request. All feedback is appreciated to
           help us improve our offering!
         </p>
-        <form name="rate-form" action="#">
+        <form name="rate-form" action="#" class="form">
           <fieldset class="rating-form">
             <legend><span>Selection of rating</span></legend>
             <div class="rating-imputs">
@@ -45,9 +45,9 @@
               <input type="radio" id="five" name="rate" value="5" />
               <label for="five" class="rating">5</label>
             </div>
+            <button class="btn disable" id="submit">Submit</button>
           </fieldset>
         </form>
-        <button type="submit" class="btn disable" id="submit">Submit</button>
         <!-- <ul class="rating-number">
           <li class="rating rating-0">1</li>
           <li class="rating rating-1">2</li>
@@ -55,11 +55,11 @@
           <li class="rating rating-3">4</li>
           <li class="rating rating-4">5</li>
         </ul> -->
-      </section>
+      </div>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <section class="thank-you-card hidden">
+      <div class="thank-you-card hidden" aria-live="polite">
         <img src="images/illustration-thank-you.svg" alt="Thank you Illustration" />
         <p class="subheading">You selected <span class="selected"></span> out of 5</p>
         <h2 class="title">Thank you!</h2>
@@ -68,7 +68,7 @@
           hesitate to get in touch!
         </p>
         <button class="btn" id="back">Back</button>
-      </section>
+      </div>
       <!-- Thank you state end -->
 
       <div class="attribution">

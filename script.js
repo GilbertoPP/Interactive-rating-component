@@ -6,6 +6,7 @@ const backButtom = document.getElementById('back');
 const mainCard = document.querySelector('.main-card');
 const thankYouCard = document.querySelector('.thank-you-card');
 const selectedEl = document.querySelector('.selected');
+const form = document.querySelector('.form');
 let whoChecked;
 // let selectedRating = 0;
 
@@ -26,7 +27,8 @@ for (let i = 0; i < inputCheck.length; i++) {
 
 /* BUTTOM SUBMIT */
 
-submit.addEventListener('click', function () {
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
   selectedEl.textContent = whoChecked.value;
   mainCard.classList.toggle('hidden');
   thankYouCard.classList.toggle('hidden');
